@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #A9A9A9;
+  text-align: center;
+}
+
+.wrapper {
+  width: 60vw;
+  max-width: 864px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+}
+.profil .profil__photo {
+  width: 14%;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 41px;
+}
+.profil .profil__name {
+  color: initial;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+.profil .profil__location {
+  margin: 0;
+}
+.profil .profil__insights {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.insights--bg {
+  background-color: #E5E5E5;
+  border-radius: 12px;
+  min-width: 100px;
+  text-align: center;
+  color: #BDBDBD;
+}
+.insights--bg .insights--color {
+  color: initial;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "item1 item2 item2" "item3 item3 item4" "item5 item6 item4";
+  gap: 24px;
+  margin-top: 40px;
+}
+.grid img {
+  border-radius: 12px;
+}
+
+.grid__item1 {
+  grid-area: item1;
+}
+
+.grid__item2 {
+  grid-area: item2;
+}
+
+.grid__item3 {
+  grid-area: item3;
+}
+
+.grid__item4 {
+  grid-area: item4;
+}
+
+.grid__item5 {
+  grid-area: item5;
+}
+
+.copyright {
+  margin-top: 99px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .wrapper {
+    width: calc(100vw - 16px);
+  }
+  .profil .profil__photo {
+    width: 25%;
+    margin-top: 17px;
+  }
+  .profil .profil__insights {
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .insights--bg {
+    min-width: 78px;
+  }
+  .grid {
+    gap: 12px;
+  }
+  .copyright {
+    margin-top: 33px;
+    font-size: 14px;
+  }
+}

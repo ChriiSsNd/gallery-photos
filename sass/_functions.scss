@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@function converterPxEm($size: 14px) {
+    @return strip-unit($size) * 0.0625em;
+}
+
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return math.div($number, ($number * 0 + 1));
+    }
+
+    @return $number;
+}
