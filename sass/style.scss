@@ -39,24 +39,24 @@ img {
     display: flex;
     flex-direction: column;
 
-    .profil__photo {
+    &__photo {
         width: 14%;
         border-radius: 16px;
         margin: auto;
         margin-top: 41px;
     }
 
-    .profil__name {
+    &__name {
         color: initial;
         font-size: $lg-size;
         margin-bottom: 0.5em;
     }
 
-    .profil__location {
+    &__location {
         margin: 0;
     }
 
-    .profil__insights {
+    &__insights {
         display: flex;
         justify-content: center;
         font-size: $md-size;

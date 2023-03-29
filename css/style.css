@@ -26,21 +26,21 @@ img {
   display: flex;
   flex-direction: column;
 }
-.profil .profil__photo {
+.profil__photo {
   width: 14%;
   border-radius: 16px;
   margin: auto;
   margin-top: 41px;
 }
-.profil .profil__name {
+.profil__name {
   color: initial;
   font-size: 14px;
   margin-bottom: 0.5em;
 }
-.profil .profil__location {
+.profil__location {
   margin: 0;
 }
-.profil .profil__insights {
+.profil__insights {
   display: flex;
   justify-content: center;
   font-size: 12px;
